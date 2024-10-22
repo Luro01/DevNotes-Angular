@@ -1,0 +1,13 @@
+<div class="notes" [ngClass]="{'priority': note.priority}">
+    <div id="containeraction">
+        <h4>{{note.title}}</h4>
+        <div class="actions">
+            <fa-icon class="icons" (click)="handleClick($event, note.id)" [icon]="faX"></fa-icon>
+            <fa-icon class="icons" (click)="onFix(note)" [icon]="faThumbtack"></fa-icon>
+            <fa-icon class="icons" (click)="onSave(note)" [icon]="faFloppyDisk"></fa-icon>
+            
+        </div>
+    </div>
+
+    <textarea [(ngModel)]="note.description" name="description"></textarea>
+</div>

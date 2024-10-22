@@ -1,0 +1,23 @@
+<main>
+    <div class="container">
+        <button (click)="toggleModal()">Adicionar Nota</button>
+        <app-add-note class="hidden"
+        [ngClass]="{'show': modalOpen}"
+        (onAdiconarNota)="addNotes($event)"
+        (fecharModal)="toggleModal()"
+        ></app-add-note>
+        <div class="grid">
+            <app-notes 
+            *ngFor="let note of notes" [note]="note"
+            (exclude)="exludeNote($event)"
+            (fixar)="fixNotes($event)"
+            (salvar)="saveEdit($event)"
+    
+            
+            
+            
+            ></app-notes>
+        </div>
+
+    </div>
+</main>

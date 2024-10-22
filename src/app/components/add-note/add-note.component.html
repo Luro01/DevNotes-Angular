@@ -1,0 +1,16 @@
+<div class="max">
+    <form [formGroup]="notesForm" (ngSubmit)="onSubmit()">
+        <fa-icon class="icons" (click)="onfecharModal()" [icon]="faX"></fa-icon>
+        <label  class="flex">
+          Digite um titulo pra sua Nota:
+          <input formControlName="title" required>
+        </label>
+        <label class="flex">
+          Descreva sua nota:
+          <textarea formControlName="description" required></textarea>
+        </label>
+        <button type="submit" >Add Note</button>
+      </form>
+</div>
+
+  

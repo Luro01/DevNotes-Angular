@@ -1,0 +1,40 @@
+.container.flex{
+    gap: 20px;
+    height: 10vh;
+}
+
+header{
+    background-color:var(--background-escuro);
+    color: white;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.551);
+    height: 11%;
+
+}
+
+h1{
+    font-size: 130%;
+    flex-basis: 20%;
+    cursor: pointer;
+}
+
+label{
+    position: relative;
+    flex-basis: 80%;
+}
+input{
+    height: 50%;
+    width: 100%;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#iconGlass{
+    font-size: 70%;
+    color: var(--background-escuro);
+    position: absolute;
+    right: 0.4%;
+    top: 30%;
+    cursor: pointer;
+}
+

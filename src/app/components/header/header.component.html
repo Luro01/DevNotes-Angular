@@ -1,0 +1,9 @@
+<header>
+    <div class="container flex">
+        <h1><a routerLink="">DevNotes</a></h1>
+        <label for="search">
+          <input type="text" id="search"  (keyup.enter)="searchs()" [(ngModel)]="search" placeholder="Pesquise sua nota...">
+          <fa-icon id="iconGlass" (click)="searchs()" [icon]="faMagnifyingGlass"></fa-icon>
+        </label>
+    </div>
+  </header>

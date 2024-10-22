@@ -1,0 +1,38 @@
+main{
+    background-color: var(--background-escuro);
+    min-height:89%;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    flex-direction: column;
+}
+
+.grid{
+    width: 100%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+button{
+    border-radius: 5px;
+    margin-bottom: 2vh;
+    color: black;
+    border: 1px solid rgba(26, 25, 25, 0.608);
+    padding: 2px 15px;
+    background-color: rgba(255, 255, 255, 0.836);
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
